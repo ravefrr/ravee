@@ -1,0 +1,126 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Light mode styles */
+body:not(.dark-mode) {
+    background-color: white;
+    color: black;
+}
+
+/* Toggle button styles */
+.toggle-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.toggle-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.toggle-button#toggleLightButton {
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 300px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+/* Products section */
+.products {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-box {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.product-box:hover {
+    background-color: #ddd;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-box p {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Media queries for responsiveness */
+
+/* Add your existing media queries and styles */
